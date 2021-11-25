@@ -1,8 +1,23 @@
 import React from 'react'
+import "./NewsItem.css"
 
 export default function NewsItem({newsStory, id}) {
 
   return (
-    <li>{newsStory.title}</li>
-  )
+    <div key={id} className="list-item">
+      <p className = "score">
+        <b>Score:</b> {newsStory.score}
+      </p>
+      <hr />
+      <p className = "item-title">
+        {newsStory.title}
+      </p>
+      <p>
+        <b>Author:</b> {newsStory.by}
+      </p>
+      <p>
+        <a href={newsStory.url} className="link">URL</a>
+      </p>
+    </div>
+  );
 }
