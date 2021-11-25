@@ -1,9 +1,8 @@
 import React from 'react'
 
-export default function NewsItem() {
-  return (
-    <div>
+export default function NewsItem({newsStory, id}) {
 
-    </div>
+  return (
+    <li>{newsStory.title}</li>
   )
 }
