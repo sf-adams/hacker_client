@@ -16,7 +16,7 @@ export default function NewsItem({newsStory, id}) {
         <b>Author:</b> {newsStory.by}
       </p>
       <p>
-        <a href={newsStory.url} className="link">URL</a>
+        <a href={newsStory.url} className="link" target="_blank" rel="noreferrer">URL</a>
       </p>
     </div>
   );
